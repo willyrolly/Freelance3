@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:fontFamily="sans-serif-light"
+                android:padding="11dp"
+                android:text="Текст текст текст"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Название"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imgAvatar"
+                app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+                app:layout_constraintTop_toTopOf="@+id/imgAvatar" />
+
+            <ImageView
+                android:id="@+id/imgStar1"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/star"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgAvatar" />
+
+            <ImageView
+                android:id="@+id/imgStar2"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/star"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStar1"
+                app:layout_constraintStart_toEndOf="@+id/imgStar1"
+                app:layout_constraintTop_toTopOf="@+id/imgStar1" />
+
+            <ImageView
+                android:id="@+id/imgStar3"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/star"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStar2"
+                app:layout_constraintStart_toEndOf="@+id/imgStar2"
+                app:layout_constraintTop_toTopOf="@+id/imgStar2" />
+
+            <ImageView
+                android:id="@+id/imgStar4"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/star"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStar3"
+                app:layout_constraintStart_toEndOf="@+id/imgStar3"
+                app:layout_constraintTop_toTopOf="@+id/imgStar3" />
+
+            <ImageView
+                android:id="@+id/imgStar5"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/half_star"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStar4"
+                app:layout_constraintStart_toEndOf="@+id/imgStar4"
+                app:layout_constraintTop_toTopOf="@+id/imgStar4" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="4.95"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStar5"
+                app:layout_constraintStart_toEndOf="@+id/imgStar5"
+                app:layout_constraintTop_toTopOf="@+id/imgStar5" />
+
+            <TextView
+                android:id="@+id/tvReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="4 Отзыва"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStar1" />
+
+            <ImageButton
+                android:id="@+id/imgPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/border"
+                android:src="@drawable/phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReviews" />
+
+            <ImageButton
+                android:id="@+id/imgInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:src="@drawable/instagram"
+                app:layout_constraintBottom_toBottomOf="@+id/imgPhone"
+                app:layout_constraintStart_toEndOf="@+id/imgPhone"
+                app:layout_constraintTop_toTopOf="@+id/imgPhone" />
+
+            <ImageView
+                android:id="@+id/imgVk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:src="@drawable/vk"
+                app:layout_constraintBottom_toBottomOf="@+id/imgInstagram"
+                app:layout_constraintStart_toEndOf="@+id/imgInstagram"
+                app:layout_constraintTop_toTopOf="@+id/imgInstagram" />
+
+            <ImageButton
+                android:id="@+id/imgDomain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:src="@drawable/domain"
+                app:layout_constraintBottom_toBottomOf="@+id/imgVk"
+                app:layout_constraintStart_toEndOf="@+id/imgVk"
+                app:layout_constraintTop_toTopOf="@+id/imgVk" />
+
+            <ImageButton
+                android:id="@+id/imgYoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:src="@drawable/youtube"
+                app:layout_constraintBottom_toBottomOf="@+id/imgDomain"
+                app:layout_constraintStart_toEndOf="@+id/imgDomain"
+                app:layout_constraintTop_toTopOf="@+id/imgDomain" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

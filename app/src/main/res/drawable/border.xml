@@ -1,0 +1,26 @@
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:shape="oval">-->
+
+<!--    <stroke android:color="@color/black" android:width="1dp"/>-->
+
+<!--    <size android:width="55dp" android:height="50dp"/>-->
+<!--</shape>-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <padding
+        android:top="1dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:bottom="1dp"/>
+
+    <stroke android:width="1dp" android:color="#f4eaea"/>
+
+    <corners
+        android:bottomLeftRadius="21dp"
+        android:bottomRightRadius="21dp"
+        android:topLeftRadius="21dp"
+        android:topRightRadius="21dp" />
+
+</shape>
